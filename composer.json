@@ -6,6 +6,7 @@
             "email": "karlson2006@ukr.net"
         }
     ],
+    "minimum-stability": "stable",
     "require": {
         "symfony/yaml": "^4.1",
         "symfony/serializer": "^4.1",

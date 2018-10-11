@@ -6,13 +6,12 @@
  * Time: 15:26
  */
 
-//namespace App\Serializer;
-use App\Serializer\AbstractFormat;
+namespace App\Serializer;
 
 class JsonSerializer extends AbstractFormat
 {
     public function serialize($value)
     {
-        return \serialize($value);
+        return \json_encode((array)$value);
     }
 }

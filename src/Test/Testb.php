@@ -6,9 +6,11 @@
  * Time: 15:28
  */
 
-class testA
+namespace App\Test;
+
+class Testb
 {
-    const SERIALIZABLE_FORMAT = "Json";
+    const SERIALIZABLE_FORMAT = "Yaml";
     private $firstName;
     private $lastName;
     private $age;

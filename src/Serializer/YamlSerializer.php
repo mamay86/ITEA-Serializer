@@ -5,8 +5,8 @@
  * Date: 04.10.18
  * Time: 15:26
  */
+
 namespace App\Serializer;
-use App\Serializer\AbstractFormat;
 
 use Symfony\Component\Yaml\Yaml;
 

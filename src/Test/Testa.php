@@ -6,9 +6,11 @@
  * Time: 15:28
  */
 
-class testC
+namespace App\Test;
+
+class Testa
 {
-    const SERIALIZABLE_FORMAT = "Xml";
+    const SERIALIZABLE_FORMAT = "Json";
     private $firstName;
     private $lastName;
     private $age;

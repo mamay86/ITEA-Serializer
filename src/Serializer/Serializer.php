@@ -21,7 +21,8 @@ class Serializer
     {
         $className = get_class($value);
         foreach ($this->formats as $format) {
-            if (get_class($format) == $className::SERIALIZABLE_FORMAT."Serializer") {
+            $class = str_replace("App\Serializer\\", "", get_class($format));
+            if ($class == $className::SERIALIZABLE_FORMAT."Serializer") {
                 return $format->serialize($value);
             }
         }

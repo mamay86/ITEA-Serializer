@@ -7,7 +7,6 @@
  */
 
 namespace App\Serializer;
-use App\Serializer\AbstractFormat;
 
 use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
