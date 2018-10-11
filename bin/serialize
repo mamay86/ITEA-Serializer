@@ -6,12 +6,14 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 $a = new App\Test\Testa('Petr', 'Ivanov', 1);
 $b = new App\Test\Testb('Vova', 'Petrov', 2);
+
 $c = new App\Test\Testc('Saha', 'Sidoro', 3);
 
 $serializer = new App\Serializer\Serializer();
+
 $serializer->addFormat(new App\Serializer\JsonSerializer());
 $serializer->addFormat(new App\Serializer\YamlSerializer());
 $serializer->addFormat(new App\Serializer\XmlSerializer());
-var_dump($serializer->serialize($a));
+var_dump($serializer->serialize($a)) ;
 var_dump($serializer->serialize($b));
 var_dump($serializer->serialize($c));

@@ -8,5 +8,4 @@ abstract class AbstractFormat implements FormatInterface
     {
         echo \sprintf("[%s] serialized...\n", \spl_object_id($this));
     }
-
 }
