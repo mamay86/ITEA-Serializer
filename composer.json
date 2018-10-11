@@ -10,7 +10,8 @@
     "require": {
         "symfony/yaml": "^4.1",
         "symfony/serializer": "^4.1",
-        "symfony/property-access": "^4.1"
+        "symfony/property-access": "^4.1",
+        "friendsofphp/php-cs-fixer": "^2.13"
     },
     "autoload": {
         "psr-4": {
