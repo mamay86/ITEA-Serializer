@@ -5,8 +5,8 @@
  * Date: 04.10.18
  * Time: 15:26
  */
-require_once __DIR__ . "/../../../vendor/autoload.php";
-require_once __DIR__ . '/AbstractFormat.php';
+namespace App\Serializer;
+use App\Serializer\AbstractFormat;
 
 use Symfony\Component\Yaml\Yaml;
 

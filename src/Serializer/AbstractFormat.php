@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/FormatInterface.php';
+namespace App\Serializer;
 
 abstract class AbstractFormat implements FormatInterface
 {

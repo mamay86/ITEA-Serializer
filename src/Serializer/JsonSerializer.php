@@ -6,7 +6,8 @@
  * Time: 15:26
  */
 
-require_once __DIR__ . '/AbstractFormat.php';
+//namespace App\Serializer;
+use App\Serializer\AbstractFormat;
 
 class JsonSerializer extends AbstractFormat
 {

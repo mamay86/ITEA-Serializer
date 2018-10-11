@@ -6,7 +6,7 @@
  * Time: 15:34
  */
 
-//require_once __DIR__ . '/FormatInterface.php';
+namespace App\Serializer;
 
 class Serializer
 {

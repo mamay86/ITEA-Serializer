@@ -6,6 +6,8 @@
  * Time: 15:24
  */
 
+namespace App\Serializer;
+
 interface FormatInterface
 {
     public function serialize($value);
