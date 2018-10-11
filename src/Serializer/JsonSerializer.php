@@ -10,7 +10,13 @@ namespace App\Serializer;
 
 class JsonSerializer extends AbstractFormat
 {
-    public function serialize($value)
+    /**
+     * JSON serialize
+     *
+     * @param $value
+     * @return string
+     */
+    public function serialize($value) :string
     {
         return \json_encode((array)$value);
     }

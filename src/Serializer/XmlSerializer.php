@@ -15,7 +15,13 @@ use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 
 class XmlSerializer extends AbstractFormat
 {
-    public function serialize($value)
+    /**
+     * XML serialize
+     *
+     * @param $value
+     * @return string
+     */
+    public function serialize($value) :string
     {
         $encoders = array(new XmlEncoder(), new JsonEncoder());
         $normalizers = array(new ObjectNormalizer());

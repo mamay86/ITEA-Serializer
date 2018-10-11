@@ -12,12 +12,23 @@ class Serializer
 {
     public $formats = [];
 
+    /**
+     * Getting all possible formats
+     *
+     * @param FormatInterface $format
+     */
     public function addFormat(FormatInterface $format)
     {
         $this->formats[] = $format;
     }
 
-    public function serialize($value)
+    /**
+     * Logic serializing by ClassName
+     *
+     * @param $value
+     * @return string
+     */
+    public function serialize($value) :string
     {
         $className = get_class($value);
         foreach ($this->formats as $format) {

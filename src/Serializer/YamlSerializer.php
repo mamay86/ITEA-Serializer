@@ -12,7 +12,13 @@ use Symfony\Component\Yaml\Yaml;
 
 class YamlSerializer extends AbstractFormat
 {
-    public function serialize($value)
+    /**
+     * YAML serialize
+     *
+     * @param $value
+     * @return string
+     */
+    public function serialize($value) :string
     {
         return Yaml::dump((array)$value);
     }
