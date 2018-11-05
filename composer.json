@@ -1,21 +1,30 @@
 {
-    "name": "roma/itea-serializer",
+    "name": "greeflas/serializer",
+    "description": "This is simple library for objects serialization to needed format.",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Roman",
-            "email": "karlson2006@ukr.net"
+            "name": "Vladimir Kuprienko",
+            "email": "vldmr.kuprienko@gmail.com"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-        "symfony/yaml": "^4.1",
-        "symfony/serializer": "^4.1",
-        "symfony/property-access": "^4.1",
-        "friendsofphp/php-cs-fixer": "^2.13"
+        "ext-simplexml": "*",
+        "symfony/yaml": "^4.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.4"
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "Greeflas\\Serializer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Greeflas\\Serializer\\Tests\\": "tests/"
         }
     }
 }
